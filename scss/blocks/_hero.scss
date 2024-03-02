@@ -1,0 +1,232 @@
+@use"../mixins" as m;
+@use "../variables" as v;
+
+.hero {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--main-bg-color);
+}
+
+.hero__box {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  background-image: url("../images/malebu.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__wrapper {
+  width: 237px;
+  margin: 0 auto 157px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: var(--main-font-weight);
+  line-height: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero__line-wrapper {
+  display: flex;
+  column-gap: 6px;
+  justify-content: center;
+}
+
+.hero__line-btn {
+  display: none;
+}
+
+.hero__line-line {
+  width: 30px;
+  height: 8px;
+  border-radius: 100px;
+  background-color: #fff;
+}
+
+.hero__line {
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.hero__form {
+  position: absolute;
+  bottom: -68px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.hero__input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 100px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px 0px #00000026;
+}
+
+.hero__input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #555;
+}
+
+.hero__btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 100%;
+  background-color: var(--main-hover-color);
+  background-image: url("../images/icons/Search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__btn:hover {
+  background-color: #077743;
+}
+
+.hero__btn:active {
+  background-color: #f5f5f5;
+  background-image: url("../images/icons/searchblack.svg");
+}
+
+@media only screen and (min-width: 390px) {
+  .hero__wrapper {
+    width: 283px;
+  }
+
+  .hero__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .hero__form {
+    width: 350px;
+  }
+
+  .hero__input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hero__box {
+    padding: 60px 40px 40px;
+  }
+
+  .hero__wrapper {
+    width: 416px;
+    margin-bottom: 270px;
+  }
+
+  .hero__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .hero__inner {
+    @include m.flexbox;
+  }
+
+  .hero__btn-wrapper {
+    @include m.flexbox ($justifytype: null);
+    column-gap: 12px;
+  }
+
+  .hero__line-btn {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 100%;
+    background-color: #fff;
+    background-image: url("../images/icons/leftIcon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hero__line-btn:hover {
+    background-image: url("../images/icons/lefticonblack.svg");
+  }
+
+  .hero__line-btn:active {
+    background-color: #077743;
+    background-image: url("../images/icons/lefticonwhite.svg");
+  }
+
+  .btn-line {
+    transform: rotate(180deg);
+  }
+
+  .hero__form {
+    bottom: -70px;
+    width: 500px;
+    height: 66px;
+  }
+
+  .hero__input {
+    padding: 22px 30px;
+  }
+
+  .hero__input::placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (min-width: 834px) {
+  .hero__form {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .hero {
+    padding-top: 114px;
+    padding-bottom: 114px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+  .hero__box {
+    background-image: url("../images/malebu@2x.png");
+  }
+
+}

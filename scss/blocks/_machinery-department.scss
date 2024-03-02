@@ -1,0 +1,391 @@
+@use"../mixins" as m;
+@use "../variables" as v;
+
+.machinery-department {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: var(--main-bg-color);
+}
+
+.machinery-department__wrapper {
+  max-width: 321px;
+  margin: 0 auto 30px;
+}
+
+.machinery-department__title-inner {
+  width: 200px;
+  margin: 0 auto 6px;
+}
+
+.machinery-department__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  color: var(--main-title-color);
+}
+
+.machinery-department__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: var(--main-font-weight);
+  line-height: 15px;
+  color: var(--main-text-color);
+  text-align: center;
+}
+
+.machinery-department__list {
+  @include m.flexbox ($justifytype: center);
+  column-gap: 14px;
+  @include m.list-unstyled;
+  margin-bottom: 16px;
+}
+
+.machinery-department__item {
+  padding: 8px 9px;
+  border-radius: 100px;
+  background-color: var(--main-bg-color);
+  border: 1.5px solid #e5e7ea;
+}
+
+.machinery-department__item:first-child {
+  background-color: var(--main-hover-color);
+}
+
+.machinery-department__item:first-child .machinery-department__link {
+  color: #fff;
+}
+
+.machinery-department__item:hover:first-child .machinery-department__link {
+  color: #000;
+}
+
+.machinery-department__item:active:first-child .machinery-department__link {
+  color: #fff;
+}
+
+.machinery-department__item:hover {
+  background-color: var(--main-bg);
+}
+
+.machinery-department__item:active {
+  background-color: var(--main-hover-color);
+}
+
+.machinery-department__item:active .machinery-department__link {
+  color: #fff;
+}
+
+.machinery-department__link {
+  font-size: 14px;
+  line-height: 17px;
+  @include m.link-unstyled (var(--main-title-color));
+}
+
+.machinery-department__inner-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  @include m.list-unstyled;
+  margin-bottom: 30px;
+}
+
+.machinery-department__inner-item {
+  width: 248px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 16px;
+  background-color: var(--main-bg);
+}
+
+.machinery-department__inner-item:hover {
+  background-color: var(--main-hover-color);
+}
+
+.machinery-department__inner-item:hover .machinery-department__inner-title {
+  color: #fff;
+}
+
+.machinery-department__inner-item:hover .machinery-department__inner-desc {
+  color: #fff;
+}
+
+.machinery-department__inner-item:hover .machinery-department__specialty-item {
+  color: #fff;
+}
+
+.machinery-department__inner-item:hover .machinery-department__specialty-item:first-child::before {
+  background-image: url("../images/icons/Iconmenwhite.svg");
+}
+
+.machinery-department__inner-item:hover .machinery-department__specialty-item:nth-child(2)::before {
+  background-image: url("../images/icons/vectorwhite.svg");
+}
+
+.machinery-department__inner-item:hover .machinery-department__specialty-item:nth-child(3)::before {
+  background-image: url("../images/icons/Iconmenyearwhite.svg");
+}
+
+.machinery-department__inner-item:hover .machinery-department__specialty-item:last-child::before {
+  background-image: url("../images/icons/groupwight.svg");
+}
+
+.machinery-department__title-wrapper {
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+}
+
+.machinery-department__inner-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--main-title-color);
+}
+
+.machinery-department__inner-desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--main-text-color);
+}
+
+.machinery-department__img {
+  width: 248px;
+}
+
+.machinery-department__specialty-list {
+  display: flex;
+  row-gap: 24px;
+  flex-wrap: wrap;
+  @include m.list-unstyled;
+  padding-left: 10px;
+}
+
+.machinery-department__specialty-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--main-title-color);
+}
+
+.machinery-department__specialty-item:first-child {
+  margin-right: 23px;
+}
+
+.machinery-department__specialty-item:first-child::before {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  background-image: url("../images/icons/Iconmen.svg");
+  background-repeat: no-repeat;
+  background-size: 12.92px 13.73px;
+  background-position: center;
+  content: "";
+}
+
+.machinery-department__specialty-item:nth-child(2)::before {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  background-image: url("../images/icons/vector.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+  content: "";
+}
+
+.machinery-department__specialty-item:nth-child(3)::before {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("../images/icons/Iconmenyear.svg");
+  background-repeat: no-repeat;
+  background-size: 12.92px 16.25px;
+  background-position: center;
+  content: "";
+}
+
+.machinery-department__specialty-item:last-child::before {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  background-image: url("../images/icons/group.svg");
+  background-repeat: no-repeat;
+  background-size: 10.62px 13.75px;
+  background-position: center;
+  content: "";
+}
+
+
+.machinery-department__specialty-item:nth-child(3) {
+  margin-right: 7px;
+}
+
+.machinery-department__inner-link {
+  display: block;
+  width: 135px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 14px 26px;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 100px;
+  background-color: var(--main-hover-color);
+  @include m.link-unstyled (#fff);
+}
+
+.machinery-department__inner-link:hover {
+  background-color: #077743;
+}
+
+.machinery-department__inner-link:hover {
+  color: #000;
+  background-color: #f5f5f5;
+}
+
+@media only screen and (min-width: 390px) {
+  .machinery-department__wrapper {
+    max-width: 268px;
+  }
+
+  .machinery-department__item {
+    padding: 14px 20px;
+  }
+
+  .machinery-department__inner-item {
+    width: 358px;
+  }
+
+  .machinery-department__img {
+    width: 358px;
+  }
+
+  .machinery-department__specialty-list {
+    padding-left: 20px;
+  }
+
+  .machinery-department__specialty-item:first-child {
+    margin-right: 70px;
+  }
+
+  .machinery-department__specialty-item:nth-child(3) {
+    margin-right: 54px;
+  }
+
+  .machinery-department__inner-link {
+    width: 173px;
+    padding: 18px 30px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .machinery-department {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .machinery-department__wrapper {
+    max-width: 575px;
+  }
+
+  .machinery-department__title-inner {
+    width: 100%;
+  }
+
+  .machinery-department__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .machinery-department__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .machinery-department__list {
+    column-gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .machinery-department__item {
+    padding: 19px 40px;
+    border-radius: 100px;
+  }
+
+  .machinery-department__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .machinery-department__inner-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .machinery-department__inner-item {
+    width: 324px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .machinery-department__title-wrapper {
+    margin-bottom: 16px;
+  }
+
+  .machinery-department__inner-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .machinery-department__inner-desc {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .machinery-department__img {
+    width: 324px;
+  }
+
+  .machinery-department__specialty-item:first-child {
+    margin-right: 70px;
+  }
+
+  .machinery-department__specialty-item:nth-child(3) {
+    margin-right: 54px;
+  }
+}
+
+@media only screen and (min-width: 834px) {
+  .machinery-department__inner-item {
+    width: 387px;
+  }
+
+  .machinery-department__img {
+    width: 387px;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .machinery-department {
+    padding-top: 19px;
+    padding-bottom: 160px;
+  }
+
+  .machinery-department__inner-list {
+    margin-bottom: 40px;
+    column-gap: 19px;
+  }
+}

@@ -1,0 +1,17 @@
+@mixin list-unstyled {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+@mixin flexbox($flextype:flex, $justifytype:space-between, $align:center) {
+  display: $flextype;
+  justify-content: $justifytype;
+  align-items: $align;
+}
+
+@mixin link-unstyled($color) {
+  color: $color;
+  text-decoration-line: none;
+}
