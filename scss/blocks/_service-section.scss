@@ -1,6 +1,32 @@
 @use"../mixins" as m;
 @use "../variables" as v;
 
+.dark-theme .service-section {
+  background-color: var(--main-durck);
+  color: var(--main-bg-durck);
+}
+
+.dark-theme .service-section__title {
+  color: #fff;
+}
+
+.dark-theme .service-section__desc {
+  color: #fff;
+}
+
+.dark-theme .service-section__item {
+  border-color: #333;
+  background-color: var(--main-bg-durck);
+}
+
+.dark-theme .service-section__item-title {
+  color: #fff;
+}
+
+.dark-theme .service-section__item-desc {
+  color: #fff;
+}
+
 .service-section {
   background-color: var(--main-bg-color);
 }
@@ -71,7 +97,7 @@
 }
 
 .service-section__item:hover:last-child::before {
-  background-image: url("../../images/icons/Iconwalletwhite.svg");
+  background-image: url("../images/icons/Iconwalletwhite.svg");
 }
 
 .service-section__item:first-child::before {

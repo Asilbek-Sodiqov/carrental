@@ -1,6 +1,36 @@
 @use"../mixins" as m;
 @use "../variables" as v;
 
+.dark-theme .feedback-section__wrapper {
+  background-color: var(--main-durck);
+  color: var(--main-bg-durck);
+}
+
+.dark-theme .feedback-section {
+  border-color: #333;
+  background-color: var(--main-bg-durck);
+}
+
+.dark-theme a {
+  color: var(--main-bg-color);
+}
+
+.dark-theme .feedback-section__item {
+  background-color: var(--main-durck);
+}
+
+.dark-theme .feedback-section__item-title {
+  color: #fff;
+}
+
+.dark-theme .feedback-section__item-desc {
+  color: #fff;
+  border-color: #333;
+}
+
+.dark-theme .feedback-section__item-line {
+  color: #fff;
+}
 
 .feedback-section {
   padding-top: 20px;
@@ -31,6 +61,10 @@
   @include m.link-unstyled (#4285f4);
 }
 
+.dark-theme .feedback-section__title-link {
+  color: #4285f4;
+}
+
 .feedback-section__title-link::before {
   width: 17px;
   height: 17px;
@@ -49,6 +83,10 @@
   color: var(--main-title-color);
 }
 
+.dark-theme .feedback-section__title {
+  color: #fff;
+}
+
 .feedback-section__title-line {
   display: block;
   width: 100%;
@@ -61,6 +99,10 @@
   margin-top: 0;
   font-size: 12px;
   line-height: 15px;
+}
+
+.dark-theme .feedback-section__text {
+  color: #fff;
 }
 
 .feedback-section__link {

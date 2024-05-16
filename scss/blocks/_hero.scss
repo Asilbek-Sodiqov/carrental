@@ -1,6 +1,11 @@
 @use"../mixins" as m;
 @use "../variables" as v;
 
+.dark-theme .hero {
+  background-color: var(--main-durck);
+  color: var(--main-bg-durck);
+}
+
 .hero {
   padding-top: 20px;
   padding-bottom: 20px;

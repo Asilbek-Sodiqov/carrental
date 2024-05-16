@@ -1,6 +1,57 @@
 @use"../mixins" as m;
 @use "../variables" as v;
 
+.dark-theme .machinery-department {
+  background-color: var(--main-durck);
+  color: var(--main-bg-durck);
+}
+
+.dark-theme .machinery-department__inner-item {
+  border-color: #333;
+  background-color: var(--main-bg-durck);
+}
+
+.dark-theme .machinery-department__item {
+  border-color: #333;
+  background-color: var(--main-durck);
+}
+
+.dark-theme .machinery-department__title {
+  color: var(--main-bg-color);
+}
+
+.dark-theme .machinery-department__text {
+  color: var(--main-bg-color);
+}
+
+.dark-theme .machinery-department__inner-item .machinery-department__specialty-item:first-child::before {
+  background-image: url("../images/icons/Iconmenwhite.svg");
+}
+
+.dark-theme .machinery-department__inner-item .machinery-department__specialty-item:nth-child(2)::before {
+  background-image: url("../images/icons/vectorwhite.svg");
+}
+
+.dark-theme .machinery-department__inner-item .machinery-department__specialty-item:nth-child(3)::before {
+  background-image: url("../images/icons/Iconmenyearwhite.svg");
+}
+
+.dark-theme .machinery-department__inner-item .machinery-department__specialty-item:last-child::before {
+  background-image: url("../images/icons/groupwight.svg");
+}
+
+.dark-theme .machinery-department__inner-item .machinery-department__inner-title {
+  color: #fff;
+}
+
+.dark-theme .machinery-department__inner-item .machinery-department__inner-desc {
+  color: #fff;
+}
+
+.dark-theme .machinery-department__inner-item .machinery-department__specialty-item {
+  color: #fff;
+}
+
 .machinery-department {
   padding-top: 80px;
   padding-bottom: 100px;
@@ -69,6 +120,10 @@
 
 .machinery-department__item:hover {
   background-color: var(--main-bg);
+}
+
+.machinery-department__item:hover .machinery-department__link {
+  color: #000;
 }
 
 .machinery-department__item:active {

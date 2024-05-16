@@ -1,6 +1,47 @@
 @use"../mixins" as m;
 @use "../variables" as v;
 
+.dark-theme .site-footer {
+  background-color: var(--main-durck);
+  color: var(--main-bg-durck);
+}
+
+.dark-theme .site-footer {
+  border-color: #333;
+}
+
+.dark-theme .site-footer__text {
+  color: #fff;
+}
+
+.dark-theme .site-footer__line {
+  color: #fff;
+}
+
+.dark-theme .site-footer__strong {
+  color: #fff;
+}
+
+.dark-theme .site-footer__start-wrapper {
+  border-color: #333;
+}
+
+.dark-theme .site-footer__address-strong {
+  color: #fff;
+}
+
+.dark-theme .site-footer__item {
+  color: #fff;
+}
+
+.dark-theme .site-footer__time {
+  color: #fff;
+}
+
+.dark-theme .site-footer__time-line {
+  color: #fff;
+}
+
 .site-footer {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -94,6 +135,10 @@
   text-decoration-line: underline;
 }
 
+.dark-theme .site-footer__item:hover .site-footer__item-link {
+  color: #fff;
+}
+
 .site-footer__item:not(:last-child) {
   margin-bottom: 12px;
 }
@@ -107,6 +152,10 @@
 .site-footer__item:hover .site-footer__link {
   color: var(--main-title-color);
   text-decoration-line: underline;
+}
+
+.dark-theme .site-footer__item:hover .site-footer__link {
+  color: #fff;
 }
 
 .site-footer__address {
@@ -161,6 +210,18 @@
   text-decoration-line: underline;
 }
 
+.dark-theme .site-footer__item:hover .site-footer__time {
+  color: #fff;
+}
+
+.dark-theme .site-footer__item:hover .site-footer__time-line {
+  color: #fff;
+}
+
+.dark-theme .site-footer__time:hover .site-footer__item-link {
+  color: #fff;
+}
+
 .site-footer__time-line {
   font-size: 11px;
   line-height: 14px;
@@ -181,6 +242,30 @@
   height: 35px;
   border-radius: 100%;
   background-color: #000;
+}
+
+.dark-theme .site-footer__link-img {
+  background-color: #fff;
+}
+
+.dark-theme #path {
+  fill: #000;
+}
+
+.dark-theme #instagram {
+  fill: #000;
+}
+
+.dark-theme #twitter {
+  fill: #000;
+}
+
+.dark-theme #facebook {
+  fill: #000;
+}
+
+.dark-theme #whatsapp {
+  fill: #000;
 }
 
 .site-footer__img-item:hover:first-child .site-footer__link-img {
