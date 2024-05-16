@@ -2508,7 +2508,7 @@ main {
 }
 
 .service-section__item:hover:last-child::before {
-  background-image: url("../../images/icons/Iconwalletwhite.svg");
+  background-image: url("../images/icons/Iconwalletwhite.svg");
 }
 
 .service-section__item:first-child::before {
@@ -3184,6 +3184,7 @@ main {
 
 .site-footer__inner-box {
   width: 63px;
+  margin-right: 50px;
 }
 
 .site-footer__inner-box:last-child {
